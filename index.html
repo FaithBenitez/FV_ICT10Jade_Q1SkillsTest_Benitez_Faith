@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Practice 3</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+ <!--
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+        
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    -->
+
+</head>
+<body>
+    <h1>OBMC Entrep Fair - Coffee Shop</h1>
+    <br>
+    <form>
+         <label for="choose">Menu:</label>
+         <br>
+         <input type="checkbox" id="item1" value="129">
+         <label for="item1">Americano</label>
+         <br>
+         <input type="checkbox" id="item1" value="129">
+         <label for="item1">Spanish Latte</label>
+         <br>
+         <input type="checkbox" id="item1" value="129">
+         <label for="item1">Cold Brew Malt</label>
+         <br>
+         <input type="checkbox" id="item1" value="129">
+         <label for="item1">Affogato</label>
+         <br>
+          <input type="checkbox" id="item1" value="129">
+         <label for="item1">Caramel Macchiato</label>
+         <br><br>
+           <button type="button"
+         py-click="create_order">Create Order</button>
+         <br>
+         <h2>==Receipt==</h2>
+        
+                  <button type="button"
+         py-click="place_order">Place Order</button>
+         <br>
+
+         <br>
+         <button type="button"
+         py-click="show_order">Show Order</button>
+    
+    </form>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    <div id="output4"></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
