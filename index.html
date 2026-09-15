@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q1 Practice 3</title>
+    <title>Q1 Skills Test</title>
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
  <!--
@@ -13,47 +13,101 @@
         <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
         <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
     -->
+        <style>
+            body{
+                background-color: rgb(161, 186, 124);
+            }
+            form{
+                background-color: rgb(17, 77, 36);
+                width: 500px;
+                height: 750px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-radius: 15px;
+                color: rgb(173, 215, 165);
+            }
+
+            h1{
+                background-color: white;
+                color: rgb(17, 77, 36);
+                border-radius: 15px;
+                width: 350px;
+                height: 50px;
+            }
+
+            #button{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 200px;
+                height: 30px;
+            }
+
+        #output1, #output2, #output3, #output4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+        </style>
 
 </head>
 <body>
-    <h1>OBMC Entrep Fair - Coffee Shop</h1>
-    <br>
+    <center>
     <form>
-         <label for="choose">Menu:</label>
+        <br>
+    <h1>🍵Coffee Shop</h1>
+    <h3 style="font-size: 30px; color: white;">Menu</h3>
+         <label for="choose">Select:</label>
          <br>
          <input type="checkbox" id="item1" value="129">
          <label for="item1">Americano</label>
          <br>
-         <input type="checkbox" id="item1" value="129">
-         <label for="item1">Spanish Latte</label>
+         <input type="checkbox" id="item2" value="149">
+         <label for="item2">Spanish Latte</label>
          <br>
-         <input type="checkbox" id="item1" value="129">
-         <label for="item1">Cold Brew Malt</label>
+         <input type="checkbox" id="item3" value="139">
+         <label for="item3">Cold Brew Malt</label>
          <br>
-         <input type="checkbox" id="item1" value="129">
-         <label for="item1">Affogato</label>
+         <input type="checkbox" id="item4" value="159">
+         <label for="item4">Affogato</label>
          <br>
-          <input type="checkbox" id="item1" value="129">
-         <label for="item1">Caramel Macchiato</label>
+         <input type="checkbox" id="item5" value="145">
+         <label for="item5">Caramel Macchiato</label>
          <br><br>
-           <button type="button"
+         
+       
+         
+         <label for="choose">Choose:</label>
+         <br>
+         <input type="radio" id="regular" value=0 name="size">
+         <label for="regular">Regular (+Php 0)</label>
+         <br>
+         <input type="radio" id="upsize" value="30" name="size">
+         <label for="upsize">Upsize (+Php 30)</label>
+         <br>
+         <br>
+          <button type="button" id="button"
          py-click="create_order">Create Order</button>
          <br>
-         <h2>==Receipt==</h2>
+         <br>
+         <div class="row">
+         <label for="options">Select Pastry:</label>
+         <br>
+         <select id="Pastry" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; width: 200px; height: 30px; text-align: center; ">
+            <option value="0">None</option>
+            <option value="129" id="churros">Churros</option>
+            <option value="159" id="bananabread">Banana Bread</option>
+            <option value="189" id="maca">Macaron</option>
+            <option value="199" id="appstrel">Apple Strudel</option>
+         </select>
         
-                  <button type="button"
-         py-click="place_order">Place Order</button>
-         <br>
+    <h2>==Receipt==</h2>
+  
+        <div id="output1"></div>
+        <div id="output2"></div>
+        <div id="output3"></div>
+        <div id="output4"></div>
 
-         <br>
-         <button type="button"
-         py-click="show_order">Show Order</button>
-    
+        <br>
     </form>
-    <div id="output1"></div>
-    <div id="output2"></div>
-    <div id="output3"></div>
-    <div id="output4"></div>
+    </center>
+
     <script type="py" src="main.py"></script>
 </body>
 </html>
