@@ -36,8 +36,13 @@
 
             #button{
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                width: 200px;
+                width: 250px;
                 height: 30px;
+                background-color: rgb(17, 56, 17);
+                color: rgb(250, 250, 190);
+                border: none;
+                cursor: pointer;
+                border-radius: 15px;
             }
 
         #output1, #output2, #output3, #output4 {
@@ -81,21 +86,21 @@
          <input type="radio" id="upsize" value="30" name="size">
          <label for="upsize">Upsize (+Php 30)</label>
          <br>
-         <br>
-          <button type="button" id="button"
-         py-click="create_order">Create Order</button>
-         <br>
-         <br>
          <div class="row">
+        <br>
          <label for="options">Select Pastry:</label>
          <br>
-         <select id="Pastry" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; width: 200px; height: 30px; text-align: center; ">
+         <select id="Pastry" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; width: 200px; height: 30px; text-align: center; color: rgb(15, 63, 15); font-size: 15px; ">
             <option value="0">None</option>
             <option value="129" id="churros">Churros</option>
             <option value="159" id="bananabread">Banana Bread</option>
             <option value="189" id="maca">Macaron</option>
             <option value="199" id="appstrel">Apple Strudel</option>
          </select>
+         <br>
+         <br>
+          <button type="button" id="button"
+         py-click="create_order">Create Order</button>
         
     <h2>==Receipt==</h2>
   
