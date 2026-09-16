@@ -32,7 +32,7 @@ def create_order(e):
     # Grand total
     total = subtotal + size_price + tax + pastry_price
 
-    display(f"Total: {total}.", target="output1")
-    display(f"Subtotal: {subtotal}.", target="output1")
-    display(f"Tax: {tax}.", target="output1", append=True)
+    display(f"Total: P{total}.", target="output1")
+    display(f"Subtotal: P{subtotal}.", target="output1")
+    display(f"Tax: P{tax}.", target="output1", append=True)
     display(f"Thank you for your order!", target="output1", append=True)
